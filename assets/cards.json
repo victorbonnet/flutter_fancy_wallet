@@ -1,0 +1,188 @@
+[
+  {
+    "id": 0,
+    "bank": "My Bank 1",
+    "brand": "visa",
+    "type": "credit",
+    "number": "1234 5678 1234 5678",
+    "color": 4294924066,
+    "texture": "circles",
+    "balance": "$ 12 198",
+    "trxs": [
+      {
+        "merchant": "O'Neil Pub",
+        "time": "11:13 PM",
+        "amount": "-$98",
+        "icon": "glassCocktail"
+      },
+      {
+        "merchant": "Hard Rock Cafe",
+        "time": "8:24 PM",
+        "amount": "-$134",
+        "icon":"silverware"
+      },
+      {
+        "merchant": "Uber",
+        "time": "5:00 PM",
+        "amount": "-$24",
+        "icon": "car"
+      },
+      {
+        "merchant": "American Airline",
+        "time": "4:13 PM",
+        "amount": "-$735",
+        "icon": "airplaneTakeoff"
+      },
+      {
+        "merchant": "Hairdresser",
+        "time": "2:13 PM",
+        "amount": "-$46",
+        "icon": "contentCut"
+      },
+      {
+        "merchant": "Gas Station",
+        "time": "2:10 PM",
+        "amount": "-$56",
+        "icon": "gasStation"
+      },
+      {
+        "merchant": "Burger King",
+        "time": "1:00 PM",
+        "amount": "-$32",
+        "icon": "silverware"
+      },
+      {
+        "merchant": "Physician",
+        "time": "11:13 PM",
+        "amount": "-$73",
+        "icon": "stethoscope"
+      },
+      {
+        "merchant": "Walmart",
+        "time": "10:00 AM",
+        "amount": "-$322",
+        "icon": "shopping"
+      },
+      {
+        "merchant": "Pharmacy",
+        "time": "9:13 AM",
+        "amount": "-$36",
+        "icon": "pharmacy"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "bank": "My Bank 2",
+    "brand": "mastercard",
+    "type": "debit",
+    "number": "1234 5678 1234 5678",
+    "color": 4294938368,
+    "texture": "layers",
+    "balance": "€ 2 454",
+    "trxs": [
+      {
+        "merchant": "Theater",
+        "time": "10:00 PM",
+        "amount": "-$24",
+        "icon":"theater"
+      },
+      {
+        "merchant": "Uber",
+        "time": "5:00 PM",
+        "amount": "-$24",
+        "icon": "car"
+      },
+      {
+        "merchant": "Target",
+        "time": "3:21 AM",
+        "amount": "-$219",
+        "icon": "shopping"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "bank": "My Bank 3",
+    "brand": "visa",
+    "type": "credit",
+    "number": "1234 5678 1234 5678",
+    "color": 4287669422,
+    "texture": "dots",
+    "balance": "$ 320",
+    "trxs": [
+      {
+        "merchant": "Uber",
+        "time": "5:00 PM",
+        "amount": "-$24",
+        "icon": "car"
+      },
+      {
+        "merchant": "Hairdresser",
+        "time": "2:13 PM",
+        "amount": "-$46",
+        "icon": "contentCut"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "bank": "My Bank 4",
+    "brand": "visa",
+    "type": "debit",
+    "number": "1234 5678 1234 5678",
+    "color": 4278238420,
+    "texture": "circles",
+    "balance": "€ 32 987",
+    "trxs": [
+      {
+        "merchant": "Pharmacy",
+        "time": "1:30 PM",
+        "amount": "-$36",
+        "icon": "pharmacy"
+      },
+      {
+        "merchant": "Physician",
+        "time": "11:13 PM",
+        "amount": "-$73",
+        "icon": "stethoscope"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "bank": "My Bank 5",
+    "brand": "mastercard",
+    "type": "credit",
+    "number": "1234 5678 1234 5678",
+    "color": 4294951175,
+    "texture": "layers",
+    "balance": "$ 1 007",
+    "trxs": [
+      {
+        "merchant": "Hard Rock Cafe",
+        "time": "8:24 PM",
+        "amount": "-$134",
+        "icon":"silverware"
+      },
+      {
+        "merchant": "Uber",
+        "time": "5:00 PM",
+        "amount": "-$24",
+        "icon": "car"
+      },
+      {
+        "merchant": "Burger King",
+        "time": "1:00 PM",
+        "amount": "-$32",
+        "icon": "silverware"
+      },
+      {
+        "merchant": "Pharmacy",
+        "time": "9:13 AM",
+        "amount": "-$36",
+        "icon": "pharmacy"
+      }
+    ]
+  }
+]
