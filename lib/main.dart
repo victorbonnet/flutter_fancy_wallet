@@ -41,7 +41,7 @@ class _FWState extends State<FWHome> {
   void initState() {
     super.initState();
 
-    DefaultAssetBundle.of(context).loadString("assets/cards.json").then((d) {
+    DefaultAssetBundle.of(context).loadString("assets/in.json").then((d) {
       _cs = json.decode(d);
       setState(() => _c = _cs[0]);
     });
@@ -50,9 +50,7 @@ class _FWState extends State<FWHome> {
   @override
   Widget build(BuildContext context) {
     if (_cs == null) return Container();
-
     if (width <= 0) width = MediaQuery.of(context).size.width - 48.0;
-
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 48.0),
@@ -120,14 +118,12 @@ class AmountWidget extends StatelessWidget {
           padding: pd,
           child: Row(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(right: 16.0),
-                child: Icon(
-                  MdiIcons.fromString(trx['i']),
-                  size: 24.0,
-                  color: Colors.blueGrey,
-                ),
+              Icon(
+                MdiIcons.fromString(trx['i']),
+                size: 24.0,
+                color: Colors.blueGrey,
               ),
+              SizedBox(width: 16.0),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -137,8 +133,7 @@ class AmountWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              Text(trx['a'],
-                  style: tt.body2.apply(color: Colors.deepOrange))
+              Text(trx['a'], style: tt.body2.apply(color: Colors.deepOrange))
             ],
           ),
         );

@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "bk": "My bk 1",
+    "bk": "My bank 1",
     "br": "visa",
     "ty": "credit",
     "num": "1234 5678 1234 5678",
@@ -73,7 +73,7 @@
   },
   {
     "id": 1,
-    "bk": "My bk 2",
+    "bk": "My bank 2",
     "br": "mastercard",
     "ty": "debit",
     "num": "1234 5678 1234 5678",
@@ -103,7 +103,7 @@
   },
   {
     "id": 2,
-    "bk": "My bk 3",
+    "bk": "My bank 3",
     "br": "visa",
     "ty": "credit",
     "num": "1234 5678 1234 5678",
@@ -127,7 +127,7 @@
   },
   {
     "id": 3,
-    "bk": "My bk 4",
+    "bk": "My bank 4",
     "br": "visa",
     "ty": "debit",
     "num": "1234 5678 1234 5678",
@@ -151,7 +151,7 @@
   },
   {
     "id": 4,
-    "bk": "My bk 5",
+    "bk": "My bank 5",
     "br": "mastercard",
     "ty": "credit",
     "num": "1234 5678 1234 5678",
