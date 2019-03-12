@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
         );
 
     return MaterialApp(
-      title: 'Fancy Wallet',
       theme: ThemeData(
         brightness: Brightness.dark,
         textTheme: tt,
@@ -35,7 +34,7 @@ class FWHome extends StatefulWidget {
 class _FWState extends State<FWHome> {
   List _cs;
   Map _c;
-  double width = 0;
+  double _w = 0;
 
   @override
   void initState() {
@@ -48,9 +47,9 @@ class _FWState extends State<FWHome> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext c) {
     if (_cs == null) return Container();
-    if (width <= 0) width = MediaQuery.of(context).size.width - 48.0;
+    if (_w <= 0) _w = MediaQuery.of(context).size.width - 48.0;
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 48.0),
@@ -61,7 +60,7 @@ class _FWState extends State<FWHome> {
               padding: EdgeInsets.all(24.0),
               child: Text(
                 "Fancy Wallet",
-                style: Theme.of(context).textTheme.display3.copyWith(
+                style: Theme.of(c).textTheme.display3.copyWith(
                       fontFamily: 'rms',
                       color: w1,
                     ),
@@ -70,10 +69,10 @@ class _FWState extends State<FWHome> {
             SizedBox(height: 32.0),
             CardSelector(
               cards: _cs.map((c) {
-                return CreditCardWidget(c);
+                return Card(c);
               }).toList(),
-              cardWidth: width,
-              cardHeight: width * 0.63,
+              cardWidth: _w,
+              cardHeight: _w * 0.63,
               onChanged: (i) => setState(() => _c = _cs[i]),
             ),
             Expanded(child: AmountWidget(_c)),
@@ -96,8 +95,8 @@ class AmountWidget extends StatelessWidget {
     return ListView.builder(
       physics: BouncingScrollPhysics(),
       itemCount: (_c['trxs'] as List).length + 1,
-      itemBuilder: (ctx, idx) {
-        if (idx == 0) {
+      itemBuilder: (c, i) {
+        if (i == 0) {
           return Padding(
             padding: pd,
             child: Column(
@@ -113,7 +112,7 @@ class AmountWidget extends StatelessWidget {
           );
         }
 
-        var trx = _c['trxs'][idx - 1];
+        var trx = _c['trxs'][i - 1];
         return Padding(
           padding: pd,
           child: Row(
@@ -142,10 +141,10 @@ class AmountWidget extends StatelessWidget {
   }
 }
 
-class CreditCardWidget extends StatelessWidget {
+class Card extends StatelessWidget {
   final Map _c;
 
-  CreditCardWidget(this._c);
+  Card(this._c);
 
   @override
   Widget build(BuildContext context) {
@@ -156,13 +155,11 @@ class CreditCardWidget extends StatelessWidget {
         color: Color(_c['co']),
         child: Stack(
           children: <Widget>[
-            Image.asset(
-              'assets/${_c['txt']}.png',
-              fit: BoxFit.cover,
-              height: double.infinity,
-              width: double.infinity,
-              alignment: Alignment.center,
-            ),
+            Image.asset('assets/${_c['txt']}.png',
+                fit: BoxFit.cover,
+                height: double.infinity,
+                width: double.infinity,
+                alignment: Alignment.center),
             Padding(
               padding: EdgeInsets.all(24.0),
               child: Column(
@@ -174,9 +171,7 @@ class CreditCardWidget extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
-                      Expanded(
-                          child: Text(_c['num'],
-                              style: tt.body2.apply(fontSizeDelta: 3))),
+                      Expanded(child: Text(_c['num'], style: tt.subhead)),
                       Image.asset('assets/${_c['br']}.png', width: 48.0)
                     ],
                   ),
