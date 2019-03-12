@@ -107,7 +107,7 @@ class AmountWidget extends StatelessWidget {
               children: <Widget>[
                 Text('Balance', style: tt.caption),
                 SizedBox(height: 8.0),
-                Text(_c['balance'], style: tt.display1.apply(color: w1)),
+                Text(_c['bl'], style: tt.display1.apply(color: w1)),
                 SizedBox(height: 24.0),
                 Text('Today', style: tt.caption),
               ],
@@ -123,7 +123,7 @@ class AmountWidget extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right: 16.0),
                 child: Icon(
-                  MdiIcons.fromString(trx['icon']),
+                  MdiIcons.fromString(trx['i']),
                   size: 24.0,
                   color: Colors.blueGrey,
                 ),
@@ -132,12 +132,12 @@ class AmountWidget extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(trx['merchant'], style: tt.title.apply(color: w1)),
-                    Text(trx['time'], style: tt.caption),
+                    Text(trx['m'], style: tt.title.apply(color: w1)),
+                    Text(trx['t'], style: tt.caption),
                   ],
                 ),
               ),
-              Text(trx['amount'],
+              Text(trx['a'],
                   style: tt.body2.apply(color: Colors.deepOrange))
             ],
           ),
@@ -158,11 +158,11 @@ class CreditCardWidget extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(12.0),
       child: Container(
-        color: Color(_c['color']),
+        color: Color(_c['co']),
         child: Stack(
           children: <Widget>[
             Image.asset(
-              'assets/${_c['texture']}.png',
+              'assets/${_c['txt']}.png',
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
@@ -173,16 +173,16 @@ class CreditCardWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(_c['bank'], style: tt.title),
-                  Text(_c['type'].toUpperCase(), style: tt.caption),
+                  Text(_c['bk'], style: tt.title),
+                  Text(_c['ty'].toUpperCase(), style: tt.caption),
                   Expanded(child: Container()),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       Expanded(
-                          child: Text(_c['number'],
+                          child: Text(_c['num'],
                               style: tt.body2.apply(fontSizeDelta: 3))),
-                      Image.asset('assets/${_c['brand']}.png', width: 48.0)
+                      Image.asset('assets/${_c['br']}.png', width: 48.0)
                     ],
                   ),
                 ],
