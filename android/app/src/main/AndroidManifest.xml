@@ -8,7 +8,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="fancy_wallet"
+        android:label="Fancy Wallet"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
