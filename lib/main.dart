@@ -49,7 +49,7 @@ class _FWState extends State<FWHome> {
     if (_w <= 0) _w = MediaQuery.of(context).size.width - 48.0;
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top: 48.0),
+        padding: EdgeInsets.only(top: 48.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
