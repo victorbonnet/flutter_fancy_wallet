@@ -5,13 +5,10 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 
 void main() => runApp(MyApp());
 
-const w1 = Colors.white;
-const w2 = Colors.white70;
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var tt = Theme.of(context).textTheme.apply(displayColor: w2, bodyColor: w2);
+    var tt = Theme.of(context).textTheme.apply(displayColor: Colors.white70, bodyColor: Colors.white70);
 
     return MaterialApp(
       theme: ThemeData(
@@ -59,7 +56,7 @@ class _FWState extends State<FWHome> {
                 "Fancy Wallet",
                 style: Theme.of(c).textTheme.display3.copyWith(
                       fontFamily: 'rms',
-                      color: w1,
+                      color: Colors.white,
                     ),
               ),
             ),
@@ -101,7 +98,7 @@ class AmountWidget extends StatelessWidget {
               children: <Widget>[
                 Text('Balance', style: tt.caption),
                 SizedBox(height: 8.0),
-                Text(_c['bl'], style: tt.display1.apply(color: w1)),
+                Text(_c['bl'], style: tt.display1.apply(color: Colors.white)),
                 SizedBox(height: 24.0),
                 Text('Today', style: tt.caption),
               ],
@@ -124,7 +121,7 @@ class AmountWidget extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(trx['m'], style: tt.title.apply(color: w1)),
+                    Text(trx['m'], style: tt.title.apply(color: Colors.white)),
                     Text(trx['t'], style: tt.caption),
                   ],
                 ),
