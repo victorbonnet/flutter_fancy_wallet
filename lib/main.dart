@@ -11,10 +11,7 @@ const w2 = Colors.white70;
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var tt = Theme.of(context).textTheme.apply(
-          displayColor: w2,
-          bodyColor: w2,
-        );
+    var tt = Theme.of(context).textTheme.apply(displayColor: w2, bodyColor: w2);
 
     return MaterialApp(
       theme: ThemeData(
