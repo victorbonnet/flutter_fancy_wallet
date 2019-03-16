@@ -65,8 +65,9 @@ class _FWState extends State<FWHome> {
               cards: _cs.map((c) {
                 return Card(c);
               }).toList(),
-              cardWidth: _w,
-              cardHeight: _w * 0.63,
+              mainCardWidth: _w,
+              mainCardHeight: _w * 0.63,
+              mainCardPadding: -16.0,
               onChanged: (i) => setState(() => _c = _cs[i]),
             ),
             Expanded(child: AmountWidget(_c)),
