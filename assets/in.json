@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "0",
     "bk": "My bank 1",
     "br": "visa",
     "ty": "credit",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": "1",
     "bk": "My bank 2",
     "br": "mastercard",
     "ty": "debit",
@@ -102,7 +102,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "2",
     "bk": "My bank 3",
     "br": "visa",
     "ty": "credit",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "3",
     "bk": "My bank 4",
     "br": "visa",
     "ty": "debit",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": "4",
     "bk": "My bank 5",
     "br": "mastercard",
     "ty": "credit",
