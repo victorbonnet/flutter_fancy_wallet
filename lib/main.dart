@@ -40,7 +40,7 @@ class _HState extends State<Home> {
   @override
   Widget build(BuildContext c) {
     if (_cs == null) return Container();
-    if (_w <= 0) _w = MediaQuery.of(context).size.width - 48.0;
+    if (_w <= 0) _w = MediaQuery.of(context).size.width - 40.0;
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.only(top: 48.0),
