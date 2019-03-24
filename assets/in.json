@@ -1,7 +1,7 @@
 [
   {
     "id": "0",
-    "bk": "My bank 1",
+    "bk": "Mya Bank",
     "br": "visa",
     "ty": "credit",
     "nm": "1234 5678 1234 5678",
@@ -73,7 +73,7 @@
   },
   {
     "id": "1",
-    "bk": "My bank 2",
+    "bk": "Excelsor",
     "br": "mastercard",
     "ty": "debit",
     "nm": "1234 5678 1234 5678",
@@ -103,7 +103,7 @@
   },
   {
     "id": "2",
-    "bk": "My bank 3",
+    "bk": "BPN",
     "br": "visa",
     "ty": "credit",
     "nm": "1234 5678 1234 5678",
@@ -112,22 +112,22 @@
     "bl": "$ 320",
     "tx": [
       {
-        "m": "Uber",
+        "m": "Payment",
         "t": "5:00 PM",
         "a": "-$24",
-        "i": "car"
+        "i": "coins"
       },
       {
-        "m": "Hairdresser",
+        "m": "Starbucks",
         "t": "2:13 PM",
-        "a": "-$46",
+        "a": "-$42",
         "i": "contentCut"
       }
     ]
   },
   {
     "id": "3",
-    "bk": "My bank 4",
+    "bk": "Providencia",
     "br": "visa",
     "ty": "debit",
     "nm": "1234 5678 1234 5678",
@@ -136,22 +136,22 @@
     "bl": "€ 32 987",
     "tx": [
       {
-        "m": "Pharmacy",
-        "t": "1:30 PM",
-        "a": "-$36",
-        "i": "pharmacy"
+        "m": "Hilton Hotel",
+        "t": "10:13 PM",
+        "a": "-$173",
+        "i": "hotel"
       },
       {
-        "m": "Physician",
-        "t": "11:13 PM",
-        "a": "-$73",
-        "i": "stethoscope"
+        "m": "Ikea",
+        "t": "1:30 PM",
+        "a": "-$328",
+        "i": "home"
       }
     ]
   },
   {
     "id": "4",
-    "bk": "My bank 5",
+    "bk": "National Bank",
     "br": "mastercard",
     "ty": "credit",
     "nm": "1234 5678 1234 5678",
@@ -160,28 +160,22 @@
     "bl": "$ 1 007",
     "tx": [
       {
-        "m": "Hard Rock Cafe",
+        "m": "Roland Garros Store",
         "t": "8:24 PM",
-        "a": "-$134",
-        "i":"silverware"
+        "a": "-$114",
+        "i":"tennis"
       },
       {
-        "m": "Uber",
-        "t": "5:00 PM",
-        "a": "-$24",
+        "m": "Taxi",
+        "t": "8:00 PM",
+        "a": "-$12",
         "i": "car"
       },
       {
-        "m": "Burger King",
-        "t": "1:00 PM",
+        "m": "Dentist",
+        "t": "2:15 PM",
         "a": "-$32",
-        "i": "silverware"
-      },
-      {
-        "m": "Pharmacy",
-        "t": "9:13 AM",
-        "a": "-$36",
-        "i": "pharmacy"
+        "i": "toothOutline"
       }
     ]
   }
