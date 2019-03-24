@@ -48,14 +48,15 @@ class _HState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-                padding: EdgeInsets.all(24.0),
-                child: Text(
-                  "Fancy Wallet",
-                  style: Theme.of(c)
-                      .textTheme
-                      .display3
-                      .copyWith(fontFamily: 'rms', color: Colors.white),
-                )),
+              padding: EdgeInsets.all(24.0),
+              child: Text(
+                "Fancy Wallet",
+                style: Theme.of(c)
+                    .textTheme
+                    .display3
+                    .copyWith(fontFamily: 'rms', color: Colors.white),
+              ),
+            ),
             SizedBox(height: 32.0),
             CardSelector(
                 cards: _cs.map((c) => Card(c)).toList(),
@@ -86,22 +87,24 @@ class Amounts extends StatelessWidget {
       itemBuilder: (c, i) {
         if (i == 0) {
           return Padding(
-              padding: pd,
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text('Balance', style: tt.caption),
-                    SizedBox(height: 8.0),
-                    Text(_c['bl'],
-                        style: tt.display1.apply(color: Colors.white)),
-                    SizedBox(height: 24.0),
-                    Text('Today', style: tt.caption),
-                  ]));
+            padding: pd,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('Balance', style: tt.caption),
+                SizedBox(height: 8.0),
+                Text(_c['bl'], style: tt.display1.apply(color: Colors.white)),
+                SizedBox(height: 24.0),
+                Text('Today', style: tt.caption),
+              ],
+            ),
+          );
         }
         var tx = _c['tx'][i - 1];
         return Padding(
-            padding: pd,
-            child: Row(children: <Widget>[
+          padding: pd,
+          child: Row(
+            children: <Widget>[
               Icon(MdiIcons.fromString(tx['i']),
                   size: 24.0, color: Colors.blueGrey),
               SizedBox(width: 16.0),
@@ -115,7 +118,9 @@ class Amounts extends StatelessWidget {
                 ),
               ),
               Text(tx['a'], style: tt.body2.apply(color: Colors.deepOrange))
-            ]));
+            ],
+          ),
+        );
       },
     );
   }
@@ -130,33 +135,41 @@ class Card extends StatelessWidget {
   Widget build(BuildContext context) {
     var tt = Theme.of(context).textTheme;
     return ClipRRect(
-        borderRadius: BorderRadius.circular(12.0),
-        child: Container(
-            color: Color(_c['co']),
-            child: Stack(children: <Widget>[
-              Image.asset('assets/${_c['txt']}.png',
-                  fit: BoxFit.cover,
-                  height: double.infinity,
-                  width: double.infinity),
-              Padding(
-                  padding: EdgeInsets.all(24.0),
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(_c['bk'], style: tt.title),
-                        Text(_c['ty'].toUpperCase(), style: tt.caption),
-                        Expanded(child: Container()),
-                        Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: <Widget>[
-                              Expanded(
-                                child: Text(_c['nm'],
-                                    style: tt.subhead,
-                                    overflow: TextOverflow.ellipsis),
-                              ),
-                              Image.asset('assets/${_c['br']}.png', width: 48.0)
-                            ])
-                      ])),
-            ])));
+      borderRadius: BorderRadius.circular(12.0),
+      child: Container(
+        color: Color(_c['co']),
+        child: Stack(
+          children: <Widget>[
+            Image.asset(
+              'assets/${_c['txt']}.png',
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+            ),
+            Padding(
+              padding: EdgeInsets.all(24.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(_c['bk'], style: tt.title),
+                  Text(_c['ty'].toUpperCase(), style: tt.caption),
+                  Expanded(child: Container()),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: <Widget>[
+                      Expanded(
+                        child: Text(_c['nm'],
+                            style: tt.subhead, overflow: TextOverflow.ellipsis),
+                      ),
+                      Image.asset('assets/${_c['br']}.png', width: 48.0)
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
