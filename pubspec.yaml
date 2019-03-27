@@ -9,8 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   material_design_icons_flutter: 3.2.3595
-  card_selector:
-    path: /Users/victor/dev/card_selector
+  card_selector: ^0.1.0
 
   cupertino_icons: ^0.1.2
 

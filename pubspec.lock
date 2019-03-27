@@ -18,10 +18,10 @@ packages:
   card_selector:
     dependency: "direct main"
     description:
-      path: "/Users/victor/dev/card_selector"
-      relative: false
-    source: path
-    version: "0.0.1"
+      name: card_selector
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   charcode:
     dependency: transitive
     description:
